@@ -16,7 +16,7 @@ Mental health really becomes important as physical health without proper menta
 
 ## SOLUTION
 
-To create a web app which monitors the user's mental health based on the descriptions of the user of that day. 
+We have come up with a web app which monitors the user's mental health based on the descriptions of the user of that day. 
 Using this web app, the user will be able to get a better overview of their mental health state and can accordingly make lifestyle changes.
 Logo of the app is shown below
 
