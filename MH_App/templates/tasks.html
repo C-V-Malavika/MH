@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Tasks</title>
+    {% load static %}
+    <link rel="icon" href="/static/img/logo.jpg" type="image/x-icon" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"></link>
+  </head>
+
+  <body>
+    <div class="titlebar">
+      <img src="/static/img/logo.jpg" class="logo" />
+      <ul>
+        <li><a href="{% url 'profile' %}">PROFILE</a></li>
+        <li><a href="{% url 'activity' %}">ACTIVITY</a></li>
+        <li><a href="#">TASKS</a></li>
+        <li><a href="{% url 'view history' %}">VIEW HISTORY</a></li>
+        <li>
+          <a href="https://oviasree-blissbound-chatbot-app-zj10pk.streamlit.app">CHAT WITH BOT</a>
+        </li>
+        <li><a href="{% url 'logout' %}">LOGOUT</a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <h1>BLISS BOUND'S DAILY TASKS</h1>
+      <div class="container1">
+        <form action="/action_page.php">
+          {% for item in data %}
+          <ol>
+            <li><label>{{item.Task1}}</label></li>
+            <br />
+            <li><label>{{item.Task2}}</label></li>
+            <br />
+            <li><label>{{item.Task3}}</label></li>
+            <br />
+          </ol>
+          {% endfor %}
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

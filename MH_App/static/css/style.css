@@ -1,0 +1,124 @@
+body {
+  background-color: #ac65eab3; /* Set background color to blue */
+}
+
+.container {
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, 10%);
+  text-align: center;
+  margin-top: 100px;
+  background-color: rgba(0, 0, 0, 0.516);
+  position: absolute;
+  width: 500px;
+  height: fit-content;
+  border-radius: 10px;
+  padding: 10px, 10px, 10px, 10px;
+  font-family: "Calibri";
+}
+
+.container1 {
+  text-align: left;
+  font-size: large;
+  padding-left: 10%;
+  color: white;
+  font-family: "Calibri";
+  padding-bottom: 10px;
+}
+
+h1 {
+  color: white;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white; /* Change background color to white */
+  border: 1px solid #ccc;
+  border-radius: 10px; /* Increase border-radius for a softer look */
+  padding: 40px; /* Increase padding for more space inside the popup */
+  z-index: 999;
+  width: 60%; /* Set width to 60% of the viewport width */
+  max-width: 600px; /* Set maximum width for larger screens */
+}
+
+.popup-content {
+  text-align: center;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #000;
+}
+
+.titlebar {
+  top: 5%;
+  height: 10%;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  background-color: transparent;
+  position: fixed;
+  border-radius: none;
+}
+
+.titlebar ul li {
+  list-style: none;
+  display: inline-flex;
+  text-align: middle;
+  margin: 0 20px;
+  position: relative;
+}
+
+.titlebar ul li a {
+  text-decoration: none;
+  font-family: "Calibri";
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  transition: 1s;
+}
+
+.titlebar ul li a:hover {
+  text-decoration: none;
+  font-family: "Calibri";
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  transition: 1s;
+}
+
+.titlebar ul li::after {
+  content: "";
+  height: 2.5px;
+  width: 0;
+  background: #00ccff;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 1s;
+}
+
+.titlebar ul li:hover::after {
+  width: 100%;
+}
+
+.logo {
+  width: 300px;
+  height: 120px;
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 300px;
+  border-radius: 20px;
+  cursor: pointer;
+}

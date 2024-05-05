@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Bliss Bound - Profile </title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/filledprofile.css' %}"></link>
+  <link rel="icon" href="/static/img/logo.jpg" type="image/x-icon">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <div class="titlebar">
+    <img src="/static/img/logo.jpg" class="logo">
+    <ul>
+     <li><a href="{% url 'login' %}">LOGIN</a></li>
+     <li><a href="{% url 'profile' %}">PROFILE</a></li>
+     <li><a href="{% url 'activity' %}">ACTIVITY</a></li>
+     <li><a href="{% url 'tasks' %}">TASKS</a></li>
+     <li><a href="{% url 'view history' %}">VIEW HISTORY</a></li>
+     <li><a href="#">CHAT WITH BOT</a></li>
+     <li><a href="{% url 'logout' %}">LOGOUT</a></li>
+    </ul>
+  </div>
+  <div class="background">
+    <div class="register-form">
+      <div class="form-box">
+        <h1>Profile</h1>
+      {% for item in data %}
+      <br><p><label for="topic" style="font-size: 20px">NAME :- {{ item.Name }}</label><br><br></p>
+ 
+      <p><label for="topic" style="font-size: 20px">DATE OF BIRTH :- {{ item.DOB }}</label><br><br></p>
+ 
+      <p><label for="topic" style="font-size: 20px">PHONE NUMBER :- {{ item.Phone_Number }}</label><br><br></p>
+  
+      <p><label for="topic" style="font-size: 20px">EMAIL ID :- {{ item.Email_ID }}</label><br><br></p>
+ 
+      <p><label for="group" style="font-size: 20px">NATIONALITY :- {{ item.Nationality }}</label><br><br></p>
+  
+      <p><label for="report" style="font-size: 20px">OCCUPATION OR STUDENT :- {{ item.Occupation }}</label><br><br></p>
+ 
+      <p><label for="report" style="font-size: 20px">HOBBIES :- {{ item.Hobbies }}</label><br><br></p>
+      {% endfor %}
+      </div>
+    </div>
+  </div>
+</body>
+</html>

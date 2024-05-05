@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Bliss Bound - Not Available </title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/hello.css' %}"></link>
+  <link rel="icon" href="/static/img/logo.jpg" type="image/x-icon">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <div class="titlebar">
+    <img src="/static/img/logo.jpg" class="logo">
+    <ul>
+     <li><a href="{% url 'signup' %}">SIGN UP</a></li>
+     <li><a href="{% url 'profile' %}">PROFILE</a></li>
+     <li><a href="#">ACTIVITY</a></li>
+     <li><a href="#">TASKS</a></li>
+     <li><a href="#">VIEW HISTORY</a></li>
+     <li><a href="#">CHAT WITH BOT</a></li>
+     <li><a href="{% url 'logout' %}">LOGOUT</a></li>
+    </ul>
+  </div>
+  <div class="background">
+    <div class="register-form">
+      <div class="form-box">
+        <h1>Not Available</h1><br>
+        <p>This service is currently unavailable...<br>
+        The reason is we don't have your valuable inputs<br><br>
+        Fill in the description and emotion in<br>
+        ACTIVITIES page<br><br>
+        You will then be able to then view this page...<br>
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

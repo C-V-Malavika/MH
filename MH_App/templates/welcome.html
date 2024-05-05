@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Welcome to Bliss Bound </title>
+  {% load static %}
+  <link rel="icon" href="/static/img/logo.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="{% static 'css/welcome.css' %}"></link>
+</head>
+
+<body>
+  <div class="titlebar">
+    <img src="/static/img/logo.jpg" class="logo"> 
+    <ul>
+     <li><a href="{% url 'signup' %}">SIGN UP</a></li>
+     <li><a href="{% url 'login' %}">LOGIN</a></li>
+     <li><a href="{% url 'login' %}">PROFILE</a></li>
+     <li><a href="{% url 'login' %}">ACTIVITY</a></li>
+     <li><a href="{% url 'login' %}">TASKS</a></li>
+     <li><a href="{% url 'login' %}">VIEW HISTORY</a></li>
+     <li><a href="{% url 'login' %}">CHAT WITH BOT</a></li>
+    </ul>
+  </div>
+  <div class="background">
+    <div class="backgroundtext">
+     <p>SMALL STEPS LEAD TO A BIG PROGRESS IN MENTAL HEALTH</p>
+     <div class='align'>
+      <a href="{% url 'login' %}"><button class="button1">LOGIN → </button><br><br></a>
+      <a href="{% url 'signup' %}"><button class="button1">SIGN UP → </button><br><br></a>
+     </div>
+    </div>
+  </div>
+</body>
+</html>
