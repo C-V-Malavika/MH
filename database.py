@@ -199,9 +199,6 @@ def update_EMOTIONS(email, emotion):
     # insert_into_login('cvmalavika@gmail.com', '1234')
     # insert_into_login('nkmadhukrishaa@gmail.com', 'abcd')
 
-    # insert_into_PROFILE("C V MALAVIKA", "2004-08-16", 7200068373, "cvmalavika@gmail.com", "Indian", "Student", "Dancing, Drawing")
-    # insert_into_PROFILE("N K MADHUKRISHAA", "2004-11-06", 9499947145, "nkmadhukrishaa@gmail.com", "Indian", "Student", "Dancing, Drawing, Poetry")
-
     # insert_into_ACTIVITIES("nkmadhukrishaa@gmail.com", "I am very happy because the mid models exam has been postponed to next week due to IV", "Happiness")
     # insert_into_ACTIVITIES("nkmadhukrishaa@gmail.com", "I am extremely sad because I miss my school friend", "Sadness")
     # insert_into_ACTIVITIES("cvmalavika@gmail.com", "My friend talked with me harshly and now I am sad", "Sadness")
