@@ -191,31 +191,3 @@ def update_EMOTIONS(email, emotion):
         elif emotion == 'Anger':
             cursor.execute("UPDATE EMOTIONS SET Anger = Anger + ? WHERE Email_ID = ?", (1, email))
             conn.commit()
-
-
-# Driver code
-# if __name__ == '__main__':
-
-    # insert_into_login('cvmalavika@gmail.com', '1234')
-    # insert_into_login('nkmadhukrishaa@gmail.com', 'abcd')
-
-    # insert_into_ACTIVITIES("nkmadhukrishaa@gmail.com", "I am very happy because the mid models exam has been postponed to next week due to IV", "Happiness")
-    # insert_into_ACTIVITIES("nkmadhukrishaa@gmail.com", "I am extremely sad because I miss my school friend", "Sadness")
-    # insert_into_ACTIVITIES("cvmalavika@gmail.com", "My friend talked with me harshly and now I am sad", "Sadness")
-    # insert_into_ACTIVITIES("cvmalavika@gmail.com", "I am very angry because my friend did not tell me that she had won the competition", "Anger")
-    # insert_into_ACTIVITIES("cvmalavika@gmail.com", "I am extremely surprised now because my parents bought me a gift for winning in the hackathon", "Surprise")
-    # insert_into_ACTIVITIES("cvmalavika@gmail.com", "I was disgusted at the sight of a group's behaviour towards a beggar while coming home", "Disgust")
-    # insert_into_ACTIVITIES("nkmadhukrishaa@gmail.com", "I don't want to go to the shop, there are a lot of dogs here that can bite anyone.", "Fear")
-    # insert_into_ACTIVITIES("nkmadhukrishaa@gmail.com", "I am really worried about my results in the semester examination", "Fear")
-    # insert_into_ACTIVITIES("nkmadhukrishaa@gmail.com", "I am really happy today, because I met my school friend today, she really threw me a surprise", "Surprise")
-    # insert_into_ACTIVITIES("nkmadhukrishaa@gmail.com", "My friend irritated me a lot today, I had a fight with her", "Anger")
-    # insert_into_ACTIVITIES("cvmalavika@gmail.com", "My friend and I went to college wearing same colour dress today, we both were surprised as we never planned it and so, we took a photo", "Surprise")
-    # insert_into_ACTIVITIES("cvmalavika@gmail.com", "During lunch time, I saw a puppy in my hostel sleeping quietly in a corner. It was soo beautiful and made my mood happy", "Happiness")
-    # insert_into_ACTIVITIES("nkmadhukrishaa@gmail.com", "I bunked a class today. I went to my class only during lunch break to notice that my professor was coming out of my class. I had a hearty laugh within me", "Surprise")
-    # insert_into_ACTIVITIES("cvmalavika@gmail.com", "I felt very guilty today for not attending the seminar that took place in my department's seminar hall.", "Sadness")
-    # insert_into_ACTIVITIES("cvmalavika@gmail.com", "I saw a snake in my hostel today. I was shocked and I constantly fear now if it is there somewhere around ", "Fear")
-    # insert_into_ACTIVITIES("nkmadhukrishaa@gmail.com", "I had a bad dream today. It was very very very disgusting!! I hate sleeping now!", "Disgust")
-    # insert_into_ACTIVITIES("cvmalavika@gmail.com", "I am excited that next week, we are going on a trip to my native!! It will be very nice to visit my friends there", "Happiness")
-    # insert_into_ACTIVITIES("nkmadhukrishaa@gmail.com", "Me and my friend were talking about our school days and we has a hearty laugh. We could not control our laughs that when a faculty entered our class, she was surprised to see us laugh that much. I guess that professor would have thought that we went crazy!!", "Happiness")
-    # insert_into_ACTIVITIES("cvmalavika@gmail.com", "My friend tried to escape from the class to go and eat. By the time she went near the door, professor came in and pulled her to her bench. They both reminded me about my childhood days!!", "Happiness")
-    # insert_into_ACTIVITIES("cvmalavika@gmail.com", "I saw a very big worm today, I could not concentrate in anything else because I felt very disgusted at the thought of it", "Disgust")
